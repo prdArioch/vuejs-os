@@ -1,0 +1,15 @@
+{
+  "plugins": [
+      ["module-resolver", {
+        "@": ["./src"],
+        "alias": {
+          "assets" : "./src/assets",
+          "utils" : "./src/utils",
+          "api": "./src/api",
+          "lib": "./src/lib",
+          "components": "./src/components",
+          "pages": "./src/pages"
+        }
+      }]
+    ]
+}

@@ -1,0 +1,31 @@
+branches:
+  - name: "master"
+
+analyzeCommits:
+  - path: "@semantic-release/commit-analyzer"
+    preset: "conventionalcommits"
+    releaseRules:
+      - type: "feat"
+        release: "minor"
+      - type: "fix"
+        release: "patch"
+      - type: "build"
+        release: "minor"
+      - type: "ci"
+        release: "patch"
+      - type: "docs"
+        release: "patch"
+      - type: "style"
+        release: "minor"
+      - type: "refactor"
+        release: "minor"
+      - type: "perf"
+        release: "minor"
+      - type: "test"
+        release: "patch"
+
+plugins:
+  - "@semantic-release/commit-analyzer"
+  - "@semantic-release/git"
+  - "@semantic-release/gitlab"
+  - "@semantic-release/release-notes-generator"

@@ -1,0 +1,113 @@
+:root{
+  /* Colors */
+  --primary-grey: #393C54;
+  --header-grey: #2E324B;
+  --medium-grey: #464A63;
+  --light-grey: #A1A8CE;
+  --xlight-grey: #d8d8d8;
+
+  --primary-blue: #1070EF;
+  --primary-green: #09d67a;
+  --primary-red: #ff4040;
+
+  /* Radius */
+  --curvy-normal: 10px;
+}
+
+
+/* -------------------------------- */
+/* Fonts */
+
+.font-light {
+  font: normal normal normal 13px Roboto;
+  letter-spacing: 0.333px;
+  color: #FFFFFF55;
+  transition: 0.15s;
+}
+
+.font-std {
+  font: normal normal bold 14px/18px Roboto;
+  letter-spacing: 0.333px;
+  color: #FFFFFF;
+  transition: 0.15s;
+}
+
+.font-title {
+  font: normal normal bold 20px/20px Roboto;
+  letter-spacing: 0.333px;
+  color: #FFFFFF;
+  transition: 0.15s;
+}
+
+/* -------------------------------- */
+/* Generics */
+
+.btn {
+  pointer-events: all;
+  width: fit-content;
+
+  height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--primary-blue);
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+.btn:hover {
+  background-color: #1867cf;
+  transition: 0.2s;
+}
+
+.btn-outlined {
+  pointer-events: all;
+  width: fit-content;
+
+  height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  border: 2px solid var(--primary-blue);
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+.btn-outlined:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: 0.2s;
+}
+
+
+/* -------------------------------- */
+/* Specifics */
+
+.drop-zone {
+  background-color: transparent;
+  border-radius: var(--curvy-normal);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.drop-zone:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: 0.2s;
+}
+
+
+/* -------------------------------- */
+/* Tools */
+
+.noselect {
+  user-select: none!important;
+}
